@@ -1,0 +1,29 @@
+@startuml
+
+class GameController
+class Player
+
+
+class Dimensions
+
+class FileInputReader
+
+class ActionsCollection
+class Action
+
+
+class Intersection
+
+interface Displayable
+class ConsoleDisplay
+
+Displayable <-- ConsoleDisplay
+
+
+GameController <-- Player
+GameController <-- Dimensions
+GameController <-- FileInputReader
+GameController <-- ActionsCollection
+ActionsCollection <-- Action
+Action <-- Intersection
+@enduml
